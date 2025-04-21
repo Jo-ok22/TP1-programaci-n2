@@ -1,0 +1,93 @@
+<!-- admin va a gestionar habitacion !-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Gestionar habitaciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+  <h1>🛠 Página del Admin</h1>
+
+  <!-- FORMULARIO para crear habitación -->
+  <h2>Crear nueva habitación</h2>
+  <form id="crear_habitacion_form">
+    <label for="num_habitacion">Nº de habitación:</label>
+    <input type="text" id="num_habitacion"><br>
+
+    <label for="tipo_habitacion">Tipo de habitación:</label>
+    <input type="text" id="tipo_habitacion"><br>
+
+    <label for="precio_habitacion">Precio:</label>
+    <input type="text" id="precio_habitacion"><br>
+
+    <input type="submit" value="Crear habitación">
+  </form>
+
+  <hr>
+
+  <!-- SELECCIÓN de habitaciones -->
+  <h2>Modificar disponibilidad</h2>
+  <label for="habitacionSelect">Elegí una habitación:</label>
+  <select id="habitacionSelect"></select><br><br>
+
+  <button id="disponibleBtn">Marcar como disponible</button>
+  <button id="ocupadaBtn">Marcar como ocupada</button>
+
+  <hr>
+
+  <h2>Lista de habitaciones</h2>
+  <button id="mostrarBtn">Mostrar habitaciones</button>
+  <ul id="listaHabitaciones"></ul>
+
+  <!-- Scripts -->
+  <script src="../js/clases.js"></script>
+  <script src="../js/valores.js"></script>
+  <script src="../js/admin.js"></script>
+  <script src="../js/admin_gestionar.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>soy la pagina de admin </h1>
+    <form action="">
+      <label for="">Nª de habitacion: </label>
+      <input type="text" id="num_habitacion"><br>
+
+      <label for="">tipo de habitacion: </label>
+      <input type="text" id="tipo_habitacion"><br>
+
+      <label for="">precio: </label>
+      <input type="text" id="precio_habitacion"><br>
+
+      <input type="submit" value="crear habitación">
+    </form>
+ </body>
+ </html> -->
