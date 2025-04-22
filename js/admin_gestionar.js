@@ -76,8 +76,9 @@ mostrarBtn.addEventListener('click', () => {
     lista.innerHTML = ''; // Limpiar antes
 
     window.habitaciones.forEach(h => {
+      const estado = h.disponible ? 'Disponible' : 'Ocupada'; // Aquí definimos el estado
       const item = document.createElement('li');
-      item.textContent = `Habitación ${h.numero} - ${h.tipo} - $${h.precio}`;
+      item.textContent = `Habitación ${h.numero} - ${h.tipo} - $${h.precio} - ${estado}`;
       lista.appendChild(item);
     });
 
@@ -88,21 +89,6 @@ mostrarBtn.addEventListener('click', () => {
   }
 });
 
-
-// const mostrarBtn = document.getElementById('mostrarBtn');
-// mostrarBtn.addEventListener('click', () => {
-//   const lista = document.getElementById('listaHabitaciones');
-//   lista.innerHTML = ''; // Limpiar antes
-
-//   window.habitaciones.forEach(h => {
-//     const row = document.createElement('tr');
-//     row.innerHTML = `
-//       <td>${h.numero}</td>
-//       <td>${h.tipo}</td>
-//       <td>$${h.precio}</td>`;
-//     lista.appendChild(row);
-//   });
-// });
 
 
 
