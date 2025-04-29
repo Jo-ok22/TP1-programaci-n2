@@ -58,13 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
         crear_habitacion_form.addEventListener('submit', (e)=>{
             e.preventDefault();
             const num_habitacion = document.getElementById('num_habitacion').value;
-            //console.log(num_habitacion);
             
             const tipo_habitacion = document.getElementById('tipo_habitacion').value;
-            //console.log(tipo_habitacion);
             
             const precio_habitacion = document.getElementById('precio_habitacion').value;
-            //console.log(precio_habitacion);
             
             const nuevaHabitacion = {
                 numHabitacion: num_habitacion,
@@ -73,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 disponible: true, // ✅ SE AGREGA ESTA LÍNEA
                 estado: 'Desocupada' // Aquí también le asignamos el estado inicial
             }
-            //console.log(nuevaHabitacion);
 
             const habitacionesPrevias = JSON.parse(localStorage.getItem('habitaciones')) || [];
             // agregar nueva habitacion 
@@ -112,12 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('⚠️ Seleccioná una habitación');
         }
     });
-    //mostrar_Btn.addEventListener('click', ()=>{
-
-    //})
+   
 
 
 });
+
+
 
 
 

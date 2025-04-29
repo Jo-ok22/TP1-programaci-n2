@@ -23,14 +23,6 @@ if (adminGuardado) {
 
 
 
-// window.admin = new Admin("Laura", "11111111");
-// console.log(admin);
-
-
-
-
-
-
 
 
 
